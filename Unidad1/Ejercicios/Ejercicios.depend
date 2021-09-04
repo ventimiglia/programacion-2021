@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1630544691 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\unidad1\ejercicios\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"../Biblioteca/matematica.h"
+
+1630543915 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\unidad1\biblioteca\matematica.h
+
+1630544853 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\unidad1\biblioteca\matematica.c
+	"../Biblioteca/matematica.h"
+
+1630713207 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\unidad1\bibliotecas\cadena\cadena.c
+
+1630714076 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\unidad1\bibliotecas\matematica\matematica.c
+	"../../Bibliotecas/Matematica/matematica.h"
+
+1630543915 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\unidad1\bibliotecas\matematica\matematica.h
+

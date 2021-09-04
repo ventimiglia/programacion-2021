@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1630463269 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\vectoresypunteros\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vectores.h"
+
+1630463712 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\vectoresypunteros\vectores.c
+	"vectores.h"
+
+1630463274 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\vectoresypunteros\vectores.h
+
