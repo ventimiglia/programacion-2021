@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1631754896 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\desafioprofe1\desafioprofe1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"DesafioProfeHeader.h"
+
+1631751151 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\desafioprofe1\desafioprofe1\desafioprofeheader.h
+
+1631755787 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\desafioprofe1\desafioprofe1\desafioprofefunctions.c
+	<string.h>
+	"DesafioProfeHeader.h"
+
+1631760224 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\codigo\clases\c\desafioprofe1\desafioprofefunctions.c
+	<string.h>
+	"DesafioProfeHeader.h"
+
+1631758927 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\codigo\clases\c\desafioprofe1\desafioprofeheader.h
+
+1631846722 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\codigo\clases\c\desafioprofe1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"DesafioProfeHeader.h"
+	"../Bibliotecas/Cadena/cadena.h"
+
+1631846519 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\codigo\clases\c\bibliotecas\cadena\cadena.h
+
+1631847141 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\codigo\clases\c\bibliotecas\cadena\cadena.c
+	<stddef.h>
+	<string.h>
+	"cadena.h"
+

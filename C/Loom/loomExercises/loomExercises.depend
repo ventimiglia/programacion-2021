@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1631491772 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\random\random.c
+	"random.h"
+	"../Cadena/cadena.h"
+
+1631480260 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\random\random.h
+
+1631479719 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\loom\loomexercises\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../Unidad1/Bibliotecas/Random/random.h"
+	"../../Unidad1/Bibliotecas/Cadena/cadena.h"
+
+1631479567 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\cadena\cadena.h
+
+1631467526 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\cadena\cadena.c
+

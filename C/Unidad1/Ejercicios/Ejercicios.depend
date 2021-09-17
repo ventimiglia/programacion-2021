@@ -17,3 +17,25 @@
 
 1630543915 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\unidad1\bibliotecas\matematica\matematica.h
 
+1631056474 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\matematica\matematica.c
+
+1630543915 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\matematica\matematica.h
+
+1631670197 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\ejercicios\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../Bibliotecas/Fecha/fecha.h"
+
+1631058761 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\vectores\vectores.h
+
+1631055900 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\cadena\cadena.c
+
+1631058915 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\vectores\vectores.c
+	<stdio.h>
+	"vectores.h"
+
+1631061296 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\fecha\fecha.c
+	"../Fecha/fecha.h"
+
+1631148573 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\c\unidad1\bibliotecas\fecha\fecha.h
+

@@ -31,15 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../Biblioteca/matematica.h" />
 		<Unit filename="../Bibliotecas/Cadena/cadena.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../Bibliotecas/Cadena/cadena.h" />
-		<Unit filename="../Bibliotecas/Matematica/matematica.c">
+		<Unit filename="../Bibliotecas/Fecha/fecha.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../Bibliotecas/Matematica/matematica.h" />
+		<Unit filename="../Bibliotecas/Fecha/fecha.h" />
+		<Unit filename="../Bibliotecas/Vectores/vectores.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Bibliotecas/Vectores/vectores.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

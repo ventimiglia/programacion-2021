@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1630773012 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\cplusplus\bibliotecas\fecha\fecha.cpp
+	"../../Bibliotecas/Fecha/fecha.h"
+
+1630772870 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\cplusplus\bibliotecas\fecha\fecha.h
+
+1630895626 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\cplusplus\bibliotecas\boolean\boolean.cpp
+	"Boolean.h"
+
+1630895185 c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\cplusplus\bibliotecas\boolean\boolean.h
+
+1630889573 source:c:\users\sventimiglia\documents\unlam\programacion\segundocuatrimestre\c\clases\cplusplus\ejercicios\ejercicios\main.cpp
+	<iostream>
+	"../../Bibliotecas/Fecha/fecha.h"
+	"../../Bibliotecas/Boolean/Boolean.h"
+
