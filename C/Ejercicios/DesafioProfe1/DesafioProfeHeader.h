@@ -1,0 +1,6 @@
+#ifndef DESAFIOPROFEHEADER_H_INCLUDED
+#define DESAFIOPROFEHEADER_H_INCLUDED
+
+char * acomodarComa(char * nombre);
+
+#endif // DESAFIOPROFEHEADER_H_INCLUDED

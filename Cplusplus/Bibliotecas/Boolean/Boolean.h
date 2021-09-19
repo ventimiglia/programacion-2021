@@ -10,10 +10,11 @@ public:
     Boolean();
     Boolean(int x);
     int getValue();
-    void setValue(int newValue);
-    Boolean _and(Boolean value);
-    Boolean _or(Boolean value);
-    void _not();
+    Boolean _and(const Boolean value) const;
+    Boolean _or (const Boolean value) const ;
+    Boolean _not();
+    Boolean operator + (const Boolean & b) const;
+    Boolean operator * (const Boolean & b) const;
 };
 
 #endif // BOOLEAN_H_INCLUDED

@@ -1,26 +1,5 @@
 #include <stddef.h>
-#include <string.h>
 #include "cadena.h"
-
-//char* _strstr(const char *s1, const char *s2);
-//
-//int cuantas_veces_aparece(const char *texto, const char *palabra)
-//{
-//    char aux[TAM], *paux=aux;
-//    int i;
-//
-//    while(*texto != '.' && *texto != ' ')
-//    {
-//        *paux = *texto;
-//        paux++;
-//        texto++;
-//        i++;
-//    }
-//    *paux='\0';
-//    paux -= i*sizeof(char);
-//
-//    texto++;
-//}
 
 int _strlen(const char *s)
 {
@@ -34,14 +13,14 @@ int _strlen(const char *s)
     return count;
 }
 
-char* _strrev(char *cadena)
+char* _strrev(char *s)
 {
     int len, i;
     char *start, *end, temp;
 
-    len = _strlen (cadena);
-    start = cadena;
-    end = cadena + len;
+    len = _strlen (s);
+    start = s;
+    end = s + len;
 
     for (i = 0; i < len - 1; i++)
     {
@@ -52,7 +31,7 @@ char* _strrev(char *cadena)
         start++;
         end--;
     }
-    return end;
+    return (char *)end;
 }
 
 char* _strchr(const char *cadena, int c)
@@ -68,11 +47,11 @@ char* _strchr(const char *cadena, int c)
 
 char* _strrchr(const char *s, int c)
 {
-    char* r = NULL;
+    char* r = (char *)NULL;
     while(*s)
     {
         if(*s == c)
-            r = s;
+            r = (char *)s;
         s++;
     }
     return (char *)r;
@@ -80,11 +59,11 @@ char* _strrchr(const char *s, int c)
 
 char* _removeDoubleSpaces(char *s)
 {
-    char * aux = strstr(s, "  ");
+    char * aux = _strstr(s, "  ");
     while(aux)
     {
-        strcpy(aux, aux + 1);
-        aux = strstr(s, "  ");
+        _strcpy(aux, aux + 1);
+        aux = _strstr(s, "  ");
     }
     return s;
 }
@@ -93,28 +72,76 @@ char * _trim(char * s)
 {
     if(*s == ' ')
     {
-        strcpy(s,s + 1);
+        _strcpy(s,s + 1);
     }
-    if(*(s + strlen(s)-1) == ' ')
+    if(*(s + _strlen(s)-1) == ' ')
     {
-        *(s + strlen(s)-1) = '\0';
+        *(s + _strlen(s)-1) = '\0';
     }
 
     return s;
 }
+
 
 char* _capitalize(char *s)
 {
+    int esPrincipio = 1;
     while(*s)
     {
-        *s = TO_UPPER(*s);
-        s++;
-        while(*s != ' ')
+        if(esPrincipio || *(s - 1) == ' ')
+        {
+            *s = TO_UPPER(*s);
+            esPrincipio = 0;
+        }
+        else if(ES_LETRA(*s))
         {
             *s = TO_LOWER(*s);
-            s++;
         }
+        s++;
     }
     return s;
 }
+
+int _strncmp(const char *s1, const char *s2, int n)
+{
+    while((*s1 == *s2) && (n > 0) && *s1 && *s2)
+    {
+        s1++;
+        s2++;
+        n--;
+    }
+    if(!n)
+        return 0;
+    if(*s1 < *s2)
+        return -1;
+    return 1;
+}
+
+char* _strstr(const char *s1, const char *s2)
+{
+    int tam_sub = _strlen(s2);
+
+    if (!tam_sub)
+        return (char*)s1;
+
+    while (*s1 && _strncmp(s1,s2,tam_sub))
+    {
+        s1++;
+    }
+    return *s1 ? (char*)s1:NULL;
+}
+
+char* _strcpy(char *s1, const char *s2)
+{
+    char * origen = s1;
+    while(*s2 && *s1)
+    {
+        *s1 = *s2;
+        s1++;
+        s2++;
+    }
+    *s1 = '\0';
+    return origen;
+}
+
 

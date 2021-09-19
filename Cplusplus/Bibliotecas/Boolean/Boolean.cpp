@@ -15,23 +15,24 @@ int Boolean::getValue()
     return this->_value;
 }
 
-void setValue(int newValue)
+Boolean Boolean::_and(const Boolean b) const
 {
-    this->_value = newValue;
+    if(this->_value && b._value)
+    {
+        return Boolean(1);
+    }
+
+    return Boolean(0);
 }
 
-Boolean Boolean::_and(Boolean value)
+Boolean Boolean::_or(const Boolean b) const
 {
-    Boolean andResult = this->_value * value.getValue();
+    if(this->_value || b._value)
+    {
+        return Boolean(1);
+    }
 
-    return andResult;
-}
-
-Boolean Boolean::_or(Boolean value)
-{
-    Boolean orResult = this->_value + value.getValue();
-
-    return orResult;
+    return Boolean(0);
 }
 
 Boolean Boolean::_not()
@@ -39,15 +40,14 @@ Boolean Boolean::_not()
     Boolean result;
     if(this->_value == 1)
     {
-        result = 0
+        result = 0;
     }
     else
     {
-        result = 1
+        result = 1;
     }
 
-    return result
-
+    return Boolean(result);
 }
 //
 //Boolean operator *(int localValue, Boolean parameterValue)
@@ -63,3 +63,23 @@ Boolean Boolean::_not()
 //}
 //
 //
+
+Boolean Boolean::operator + (const Boolean & b) const
+{
+    if(this->_value || b._value)
+    {
+        return Boolean(1);
+    }
+
+    return Boolean(0);
+}
+
+Boolean Boolean::operator * (const Boolean & b) const
+{
+    if(this->_value && b._value)
+    {
+        return Boolean(1);
+    }
+
+    return Boolean(0);
+}
