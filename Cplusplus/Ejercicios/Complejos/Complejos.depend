@@ -1,3 +1,12 @@
 # depslib dependency file v1.0
-1631980724 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\complejo\complejo.cpp
+1632101410 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\complejo\complejo.cpp
+	"Complejo.h"
+	<iostream>
+
+1632100983 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\complejo\complejo.h
+	<iostream>
+
+1632101432 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\ejercicios\complejos\main.cpp
+	<iostream>
+	"../../Bibliotecas/Complejo/Complejo.h"
 

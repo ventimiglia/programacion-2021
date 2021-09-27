@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1632189114 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\archivos\archivos.c
+
+1632359625 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\archivos\ejercicio13\includes\ejercicio13.c
+	<stdio.h>
+	"../../../../Bibliotecas/Archivos/Archivos.h"
+	"./ejercicio13.h"
+
+1632189117 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\archivos\archivos.h
+
+1632356666 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\archivos\ejercicio13\includes\ejercicio13.h
+
+1632359652 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\archivos\ejercicio13\main.c
+	<stdio.h>
+	<stdlib.h>
+	"./includes/ejercicio13.h"
+

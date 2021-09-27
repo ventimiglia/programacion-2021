@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1632702080 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\fecha\fecha.cpp
+	"Fecha.h"
+
+1632701425 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\fecha\fecha.h
+	<iostream>
+
+1632701971 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\ejercicios\fecha\main.cpp
+	<iostream>
+	"../../Bibliotecas/Fecha/Fecha.h"
+
