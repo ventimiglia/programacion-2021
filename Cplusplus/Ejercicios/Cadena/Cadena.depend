@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1633212370 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\ejercicios\cadena\main.cpp
+	<iostream>
+	"../../Bibliotecas/Cadena/Cadena.h"
+
+1633212393 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\cadena\cadena.h
+	<iostream>
+
+1633215827 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\cadena\cadena.cpp
+	<iostream>
+	<string.h>
+	"Cadena.h"
+

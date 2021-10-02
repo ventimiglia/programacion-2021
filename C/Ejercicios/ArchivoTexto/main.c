@@ -1,11 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+#define TAM 100
+#define PATHTXT         "alumnos.txt"
+#define PATHTXTVAR      "alumnosVariable.txt"
+#define PATHTXTFIJO     "alumnosFijo.txt"
+#define PATHBI          "alumnosBinario.dat"
+
+///Escribir archivo texto longitud variable.
+
+///Leerlo
+///Crear archivo binario
+///Escribir archivo binario
+///Leer el archivo binario
+///Crear archivo texto longitud fija
+///Escribirlo
+
 typedef struct
 {
     int d, m, a;
-}t_fecha;
-/// ATlv => Ab =>ATlf
-/// ATlf => Ab =>ATlv
+} t_fecha;
+
+
 typedef struct
 {
     int dni;
@@ -15,164 +31,75 @@ typedef struct
     t_fecha f_ing;
     char estado;
 } t_alumno;
-int cargar_archivo(char * path);
-int leer_alumno_de_arch(FILE* pf, t_alumno * alu);
-/**
-00000090Sa, Lia                      F07.5001022005A
-00000098Jose Perez                   M08.0001021999A
-00000110Alumno uno                   F07.5001022005I
-00000120Alumno dos                   M07.5001022015A
-00000130Alumno tres                  M08.0001022000A
-00000140Alumno cuatro                F07.5001021998A
-00000150Alumno cinco                 F04.0001021997A
-90|Sa, Lia|F|7.50|01/02/2005|A
-98|Jose Perez|M|8.00|01/02/1999|A
-110|Alumno uno|F|7.50|01/02/2005|I
-120|Alumno dos|M|7.50|01/02/2015|A
-130|Alumno tres|M|8.00|01/02/2000|A
-140|Alumno cuatro|F|7.50|01/02/1998|A
-150|Alumno cinco|F|4.00|01/02/1997|A
-*/
+
+int cargarArchivoTextoVariable(char * path);
+int leerArchivoTextoVariable(FILE * fp, t_alumno * alumno);
+int mostrarArchivoBinario(char * path);
+
+int convertirTxtABin(const char * nombreTexto, const char * nombreBinario, char formato);
+int convertirBinATxt(const char * nombreBinario, const char * nombreTexto, char formato);
+
+
 int main()
 {
-    FILE * pf;
-    t_alumno alu;
-    int tam_arch, cant_reg;
-    char texto[54];
-    if(!cargar_archivo("alus.txt"))
+    cargarArchivoTextoVariable(PATHTXT);
+
+    t_alumno alumno;
+
+    FILE * fpTxtVar = fopen(PATHTXT, "rt");
+    FILE * fpBi = fopen(PATHBI, "wb");
+
+    if(!fpTxtVar)
     {
-        printf("No se pudo cargar el archivo");
         return 1;
     }
-    pf = fopen("alus.txt", "rt");
-    if(!pf)///if(pf == NULL)
+
+    if(!fpBi)
     {
-        printf("No se pudo abrir el archivo");
+        fclose(fpTxtVar);
         return 1;
     }
-    /**
-    00000090Sa, Lia                      F07.5001022005A\n\0
-    04754123
-    90|Sa, Lia|F|7.50|01/02/2005|A\n\0
-    */
-//    while(fgets(texto, sizeof(texto), pf))
-//    {
-//        if(!strchr(texto, '\n'))
-//        {
-//            return 2;
-//        }
-//        sscanf(texto, "%8d%29[^\n]%c%5f%2d%2d%4d%c",
-//                &alu.dni,
-//                alu.apyn,
-//                &alu.sexo,
-//                &alu.promedio,
-//                &alu.f_ing.d,
-//                &alu.f_ing.m,
-//                &alu.f_ing.a,
-//                &alu.estado);
+
+
+    while(leerArchivoTextoVariable(fpTxtVar, &alumno))
+    {
+
+        fwrite(&alumno,sizeof(t_alumno), 1, fpBi);
+    }
+
+    fclose(fpTxtVar);
+    fclose(fpBi);
+
+    convertirBinATxt(PATHBI, PATHTXTFIJO, 'F');
+
+    convertirTxtABin(PATHTXTFIJO, PATHBI, 'F');
 //
-//        printf("%d %s %c %.2f %02d/%02d/%4d %c\n",
-//                alu.dni,
-//                alu.apyn,
-//                alu.sexo,
-//                alu.promedio,
-//                alu.f_ing.d,
-//                alu.f_ing.m,
-//                alu.f_ing.a,
-//                alu.estado);
-//    }
-    while(leer_alumno_de_arch(pf, &alu))
-    {
-        printf("%d %s %c %.2f %02d/%02d/%4d %c\n",
-                alu.dni,
-                alu.apyn,
-                alu.sexo,
-                alu.promedio,
-                alu.f_ing.d,
-                alu.f_ing.m,
-                alu.f_ing.a,
-                alu.estado);
-    }
-    fclose(pf);
+//    mostrarArchivoBinario(PATHBI);
+    convertirBinATxt(PATHBI, PATHTXTVAR, 'V');
+
     return 0;
 }
-int leer_alumno_de_arch(FILE* pf, t_alumno * alu)
+
+int cargarArchivoTextoVariable(char * path)
 {
-    /// %[abc] => aaabbbccc  || bacabacaab
-    /// %[^abc] => kljoiuuh  || rutyut
-    /**
-        00000090Sa, Lia                      F07.5001022005A
-        00000098Jose Perez                   M08.0001021999A
-        00000110Alumno uno                   F07.5001022005I
-        */
-//    return fscanf(pf, "%8d%29[^\n]%c%5f%2d%2d%4d%c\n",
-//                &alu->dni,
-//                alu->apyn,
-//                &alu->sexo,
-//                &alu->promedio,
-//                &alu->f_ing.d,
-//                &alu->f_ing.m,
-//                &alu->f_ing.a,
-//                &alu->estado)
-//                 == 8;
-/**
-        90|Sa, Lia|F|7.50|01/02/2005|A
-        98|Jose Perez|M|8.00|01/02/1999|A
-        110|Alumno uno|F|7.50|01/02/2005|I
-        */
-    return fscanf(pf, "%d|%[^|\n]|%c|%f|%d/%d/%d|%c\n",
-                &alu->dni,
-                alu->apyn,
-                &alu->sexo,
-                &alu->promedio,
-                &alu->f_ing.d,
-                &alu->f_ing.m,
-                &alu->f_ing.a,
-                &alu->estado) == 8;
-}
-int cargar_archivo(char * path){
-    t_alumno alu_vec[] = {
-                        {90, "Sa, Lia", 'F', 7.5,{1,2,2005}, 'A'},
-                        {98, "Jose Perez", 'M', 8, {1,2,1999}, 'A'},
-                        {110, "Alumno uno", 'F', 7.5, {1,2,2005}, 'I'},
-                        {120, "Alumno dos", 'M', 7.5, {1,2,2015}, 'A'},
-                        {130, "Alumno tres", 'M', 8, {1,2,2000}, 'A'},
-                        {140, "Alumno cuatro", 'F', 7.5, {1,2,1998}, 'A'},
-                        {150, "Alumno cinco", 'F', 4, {1,2,1997}, 'A'},
-                        };
-    FILE * pf = fopen(path, "wt");
     int i;
-    if(!pf)///if(pf == NULL)
+    t_alumno alu_vec[] =
     {
-        return 0;
-    }
-    ///fwrite(alu_vec, sizeof(t_alumno), 7, pf);
-    ///fwrite(alu_vec, sizeof(alu_vec), 1, pf);
-//    for (i=0;i<7;i++)
-//    {
-//        /**
-//        00000090Sa, Lia                      F07.5001022005A
-//        00000098Jose Perez                   M08.0001021999A
-//        00000110Alumno uno                   F07.5001022005I
-//        */
-//        fprintf(pf,"%08d%-29s%c%05.2f%02d%02d%4d%c\n",
-//                alu_vec[i].dni,
-//                alu_vec[i].apyn,
-//                alu_vec[i].sexo,
-//                alu_vec[i].promedio,
-//                alu_vec[i].f_ing.d,
-//                alu_vec[i].f_ing.m,
-//                alu_vec[i].f_ing.a,
-//                alu_vec[i].estado);
-//    }
-    for (i=0;i<7;i++)
+        {90, "Sa, Lia", 'F', 7.5,{1,2,2005}, 'A'},
+        {98, "Jose Perez", 'M', 8, {1,2,1999}, 'A'},
+        {110, "Alumno uno", 'F', 7.5, {1,2,2005}, 'I'},
+        {120, "Alumno dos", 'M', 7.5, {1,2,2015}, 'A'},
+        {130, "Alumno tres", 'M', 8, {1,2,2000}, 'A'},
+        {140, "Alumno cuatro", 'F', 7.5, {1,2,1998}, 'A'},
+        {150, "Alumno cinco", 'F', 4, {1,2,1997}, 'A'},
+    };
+    FILE * fp = fopen(path, "wt");
+    if(!fp)
+        return 1;
+
+    for(i = 0; i < 7; i++)
     {
-        /**
-        90|Sa, Lia|F|7.50|01/02/2005|A
-        98|Jose Perez|M|8.00|01/02/1999|A
-        110|Alumno uno|F|7.50|01/02/2005|I
-        */
-        fprintf(pf,"%d|%s|%c|%.2f|%02d/%02d/%4d|%c\n",
+        fprintf(fp, "%d|%s|%c|%.2f|%02d/%02d/%4d|%c\n",
                 alu_vec[i].dni,
                 alu_vec[i].apyn,
                 alu_vec[i].sexo,
@@ -182,6 +109,130 @@ int cargar_archivo(char * path){
                 alu_vec[i].f_ing.a,
                 alu_vec[i].estado);
     }
-    fclose(pf);
+    fclose(fp);
+    return 0;
+}
+
+int leerArchivoTextoVariable(FILE * fp, t_alumno * alumno)
+{
+    return fscanf(fp, "%d|%[^|\n]|%c|%f|%d/%d/%d|%c",
+                  &alumno->dni,
+                  alumno->apyn,
+                  &alumno->sexo,
+                  &alumno->promedio,
+                  &alumno->f_ing.d,
+                  &alumno->f_ing.m,
+                  &alumno->f_ing.a,
+                  &alumno->estado) == 8;
+}
+
+int mostrarArchivoBinario(char * path)
+{
+    t_alumno alumnito;
+    FILE * fp = fopen(path, "rb");
+
+    if(!fp)
+        return -2;
+
+    fread(&alumnito, sizeof(t_alumno), 1, fp);
+
+    while(!feof(fp))
+    {
+        printf("%d|%s|%c|%.2f|%02d/%02d/%4d|%c\n",
+               alumnito.dni,
+               alumnito.apyn,
+               alumnito.sexo,
+               alumnito.promedio,
+               alumnito.f_ing.d,
+               alumnito.f_ing.m,
+               alumnito.f_ing.a,
+               alumnito.estado);
+        fread(&alumnito, sizeof(t_alumno), 1, fp);
+    }
+    fclose(fp);
+
     return 1;
 }
+
+int convertirBinATxt(const char * nombreBinario, const char * nombreTexto, char formato)
+{
+    FILE * fpBin = fopen(nombreBinario, "rb");
+    FILE * fpTxt = fopen(nombreTexto, "wt");
+
+    if(!fpBin || !fpTxt)
+    {
+        return -1;
+    }
+
+    const char* formatoPrint = formato == 'F' ?
+                               "%08d%-29s%c%04.2f%02d%02d%4d%c\n" : "%d|%s|%c|%.2f|%02d/%02d/%4d|%c\n";
+
+    t_alumno alumno;
+
+    fread(&alumno, sizeof(t_alumno), 1, fpBin);
+
+    while(!feof(fpBin))
+    {
+        fprintf(fpTxt, formatoPrint,
+                alumno.dni,
+                alumno.apyn,
+                alumno.sexo,
+                alumno.promedio,
+                alumno.f_ing.d,
+                alumno.f_ing.m,
+                alumno.f_ing.a,
+                alumno.estado);
+        fread(&alumno, sizeof(t_alumno), 1, fpBin);
+    }
+    fclose(fpTxt);
+    fclose(fpBin);
+
+    return 0;
+}
+
+int convertirTxtABin(const char * nombreTexto, const char * nombreBinario, char formato)
+{
+    FILE * fpTxt = fopen(nombreTexto, "rt");
+    FILE * fpBin = fopen(nombreBinario, "wb");
+
+    if(!fpTxt || !fpBin)
+    {
+        return -1;
+    }
+
+    const char* formatoPrint = formato == 'F' ?
+                               "%8d%29[^\n]%c%4f%2d%2d%4d%c\n" : "%d|%[^|\n]|%c|%f|%d/%d/%d|%c\n";
+
+    t_alumno alumno;
+
+    fscanf(fpTxt,formatoPrint,
+           &alumno.dni,
+           alumno.apyn,
+           &alumno.sexo,
+           &alumno.promedio,
+            &alumno.f_ing.d,
+           &alumno.f_ing.m,
+           &alumno.f_ing.a,
+           &alumno.estado);
+
+    while(!feof(fpTxt))
+    {
+        fwrite(&alumno, sizeof(t_alumno), 1, fpBin);
+        fscanf(fpTxt,formatoPrint,
+               &alumno.dni,
+               alumno.apyn,
+               &alumno.sexo,
+               &alumno.promedio,
+               &alumno.f_ing.d,
+               &alumno.f_ing.m,
+               &alumno.f_ing.a,
+               &alumno.estado);
+    }
+
+    fclose(fpTxt);
+    fclose(fpBin);
+
+    return 0;
+}
+
+

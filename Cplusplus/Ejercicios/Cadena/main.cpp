@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "Biblioteca/Cadena.h"
 using namespace std;
 
 /**

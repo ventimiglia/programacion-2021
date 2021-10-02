@@ -31,10 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../Bibliotecas/Cadena/cadena.c">
+		<Unit filename="../../Bibliotecas/Cadena/cadena.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../Bibliotecas/Cadena/cadena.h" />
+		<Unit filename="../../Bibliotecas/Cadena/cadena.h" />
 		<Unit filename="DesafioProfeFunctions.c">
 			<Option compilerVar="CC" />
 		</Unit>

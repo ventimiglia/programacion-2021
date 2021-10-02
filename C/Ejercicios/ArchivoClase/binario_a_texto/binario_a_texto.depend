@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1633129101 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\archivoclase\binario_a_texto\main.c
+	<stdio.h>
+	<stdlib.h>
+	"archivos.h"
+
+1633129540 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\archivoclase\binario_a_texto\archivos.h
+

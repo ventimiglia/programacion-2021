@@ -1,0 +1,7 @@
+00000090Sa, Lia                      F7.5001022005A
+00000098Jose Perez                   M8.0001021999A
+00000110Alumno uno                   F7.5001022005I
+00000120Alumno dos                   M7.5001022015A
+00000130Alumno tres                  M8.0001022000A
+00000140Alumno cuatro                F7.5001021998A
+00000150Alumno cinco                 F4.0001021997A

@@ -1,5 +1,7 @@
 #include <iostream>
 #include "../../Bibliotecas/Fecha/Fecha.h"
+#include <time.h>
+#include <chrono>
 
 using namespace std;
 /**
@@ -44,6 +46,21 @@ int main()
 
     cin >> fecha5;
     cout << fecha5;
+
+    time_t x = time(0);
+
+    struct tm y;
+
+    y = *localtime(&x);
+
+    int d,m,a;
+
+    d = y.tm_mday;
+    m = y.tm_mon + 1;
+    a = y.tm_year + 1900;
+
+
+
 
 
     return 0;
