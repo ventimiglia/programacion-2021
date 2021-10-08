@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1632527437 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\comparacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

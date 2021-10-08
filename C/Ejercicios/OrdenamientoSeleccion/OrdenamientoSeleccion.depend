@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1633658409 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\ordenamientoseleccion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../../Bibliotecas/Ordenamiento/ordenamiento.h"
+
+1633658378 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\ordenamiento\ordenamiento.c
+	"ordenamiento.h"
+
+1633658462 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\ordenamiento\ordenamiento.h
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+

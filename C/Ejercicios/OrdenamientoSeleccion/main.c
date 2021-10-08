@@ -1,62 +1,50 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "../../Bibliotecas/Ordenamiento/ordenamiento.h"
 
-void ordenarSeleccion(void * vec, size_t ce, size_t tam, int (*cmp)(const void *, const void *));
+typedef struct
+{
+    char nombre[30];
+    int dni;
+    char apellido[30];
+} t_persona;
+
+int cmp_ent(const void * e1, const void * e2);
+int cmp_persona(const void * e1, const void * e2);
 
 int main()
 {
-    printf("Hello world!\n");
+    const t_persona persona1[] = {
+        {"Carlos", 39000000, "Paez"},{"Pedro", 32000000, "Pipo"},{"Eugenio", 38000000, "Culini"}
+    };
+
+    for(int i = 0; i < 3; i++)
+    {
+        printf("%s%d%s\n", persona1[i].nombre,persona1[i].dni,persona1[i].apellido);
+    }
+
+    ordenarSeleccion(persona1, sizeof(persona1)/sizeof(t_persona), sizeof(t_persona), cmp_persona);
+
+    for(int i = 0; i < 3; i++)
+    {
+        printf("%s%d%s\n", persona1[i].nombre,persona1[i].dni,persona1[i].apellido);
+    }
+
     return 0;
 }
 
-void ordenarSeleccion(void * vec, size_t ce, size_t tam, int (*cmp)(const void *, const void *))
+int cmp_ent(const void * v1, const void * v2)
 {
-    void * fin = vec + (ce-1 * tam),
-        * men;
+    const int * e1 = v1;
+    const int * e2 = v2;
 
-    while(vec<fin)
-    {
-        men = buscarMenor(vec, fin);
-        if(vec!=men)
-        {
-            intercambiar(vec,man);
-        }
-        vec += tam;
-    }
+    return *e1 - *e2;
 }
 
-int * buscarMenor(const void * vec, const void * fin, size_t tam, int (*cmp)(const void *, const void *))
+int cmp_persona(const void * v1, const void * v2)
 {
-    const void * men = vec;
-    vec+ = tam;
-    while(vec <= fin)
-    {
-        if(cmp(vec,men) < 0)
-        {
-            men = vec;
-        }
-        vec+=tam;
-    }
-    return (void *) men;
-}
+    const t_persona * p1 = v1,
+                    * p2 = v2;
 
-void intercambiar(void * e1, void * e2, size_t tam)
-{
-    ///defino un espacio de memoria generico x;
-    char aux[1000];
-    memcpy(aux, *e1, tam); ///copia memoria
-    memcpy(*e1, *e2, tam); ///copia memoria
-    memcpy(*e2, aux, tam); ///copia memoria
-
-    ///con memoria dinamica
-
-    void * aux = malloc(tam);
-
-    if(!aux)
-        return;
-    memcpy(aux, *e1, tam); ///copia memoria
-    memcpy(*e1, *e2, tam); ///copia memoria
-    memcpy(*e2, aux, tam); ///copia memoria
-
-    free(aux);
+    return p1->dni - p2->dni;
 }
