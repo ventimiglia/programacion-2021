@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1634388390 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\coladinamica\coladinamica.c
+	<stdlib.h>
+	"ColaDinamica.h"
+
+1634343405 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\coladinamica\coladinamica.h
+
+1634390354 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\colaestatica\colaestatica.c
+	<string.h>
+	"ColaEstatica.h"
+
+1634388121 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\colaestatica\colaestatica.h
+
+1584205420 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\cola\main.c
+	<stdio.h>
+	<stdlib.h>
+

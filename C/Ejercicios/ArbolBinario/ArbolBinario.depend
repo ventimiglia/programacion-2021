@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1637447512 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\arbolbinario\arbolbinario.c
+	"ArbolBinario.h"
+
+1637446305 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\arbolbinario\arbolbinario.h
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+

@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1531226730 source:c:\users\dell\desktop\2do parciales\entregable_2018-07-10\2doparcialc\arbol.c
+	<Tipos.h>
+	<stdio.h>
+	<stdlib.h>
+	<Arbol.h>
+	<math.h>
+
+1531225862 c:\users\dell\desktop\2do parciales\entregable_2018-07-10\include\tipos.h
+
+1531226786 c:\users\dell\desktop\2do parciales\entregable_2018-07-10\include\arbol.h
+	<Tipos.h>
+
+1541857326 source:c:\users\dell\desktop\2do parciales\entregable_2018-07-10\2doparcialc\cola.c
+	<stdlib.h>
+	<cola.h>
+
+1468261899 c:\users\dell\desktop\2do parciales\entregable_2018-07-10\include\cola.h
+	<tipos.h>
+
+1541858140 source:c:\users\dell\desktop\2do parciales\entregable_2018-07-10\2doparcialc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<utilitarias.h>
+	<varias.h>
+	<arbol.h>
+	<cola.h>
+
+1541857830 c:\users\dell\desktop\2do parciales\entregable_2018-07-10\include\utilitarias.h
+	<stdio.h>
+	<arbol.h>
+	<cola.h>
+
+1468261895 c:\users\dell\desktop\2do parciales\entregable_2018-07-10\include\varias.h
+
+1542129324 source:c:\users\dell\desktop\2do parciales\entregable_2018-07-10\2doparcialc\utilitarias.c
+	<utilitarias.h>
+	<string.h>
+	<varias.h>
+	<ctype.h>
+
+1575003837 source:c:\users\maruu\desktop\entregable_2018-07-10\2doparcialc\arbol.c
+	<Tipos.h>
+	<stdio.h>
+	<stdlib.h>
+	<Arbol.h>
+	<math.h>
+
+1542646326 c:\users\maruu\desktop\entregable_2018-07-10\include\tipos.h
+
+1542646324 c:\users\maruu\desktop\entregable_2018-07-10\include\arbol.h
+	<Tipos.h>
+
+1542646322 source:c:\users\maruu\desktop\entregable_2018-07-10\2doparcialc\cola.c
+	<stdlib.h>
+	<cola.h>
+
+1542646326 c:\users\maruu\desktop\entregable_2018-07-10\include\cola.h
+	<tipos.h>
+
+1542646322 source:c:\users\maruu\desktop\entregable_2018-07-10\2doparcialc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<utilitarias.h>
+	<varias.h>
+	<arbol.h>
+	<cola.h>
+
+1542646328 c:\users\maruu\desktop\entregable_2018-07-10\include\utilitarias.h
+	<stdio.h>
+	<arbol.h>
+	<cola.h>
+
+1542646326 c:\users\maruu\desktop\entregable_2018-07-10\include\varias.h
+
+1575003909 source:c:\users\maruu\desktop\entregable_2018-07-10\2doparcialc\utilitarias.c
+	<utilitarias.h>
+	<string.h>
+	<varias.h>
+	<ctype.h>
+

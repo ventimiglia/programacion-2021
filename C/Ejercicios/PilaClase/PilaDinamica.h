@@ -10,4 +10,7 @@ typedef struct sNodo
 
 typedef tNodo * tPila;
 
+void crear_pila(tPila pp);
+int poner_en_pila(tPila pp, void * info);
+
 #endif // PILADINAMICA_H_INCLUDED

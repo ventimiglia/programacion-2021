@@ -21,7 +21,7 @@ int sumaEncimaDiagSdria(int mat[][TAM], int ord)
     int suma = 0;
     for(i = 0; i < ord; i++)
     {
-        for(j; j < ord - 1; j++)
+        for(j = 0; j < ord - 1; j++)
         {
             suma+=mat[i][j];
         }

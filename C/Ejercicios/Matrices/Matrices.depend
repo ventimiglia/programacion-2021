@@ -1,16 +1,17 @@
 # depslib dependency file v1.0
-1632452599 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\matrices\main.c
+1633983529 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\matrices\main.c
 	<stdio.h>
 	<stdlib.h>
-	"Ejercicios/Matrices.h"
 	"../../Bibliotecas/Matrices/Matrices.h"
 
-1632450261 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\matrices\matrices.c
+1633981053 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\matrices\matrices.c
+	<stdio.h>
+	"Matrices.h"
 
-1632453086 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\matrices\ejercicios\matrices.c
+1633914031 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\matrices\ejercicios\matrices.c
 	"Matrices.h"
 
 1632452306 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\matrices\ejercicios\matrices.h
 
-1632450266 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\matrices\matrices.h
+1633983019 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\matrices\matrices.h
 

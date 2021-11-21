@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1635269759 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\tuplatamiplata\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"TuPlataMiPlata.h"
+	"../../C/Bibliotecas/PilaEstatica/PilaEstatica.h"
+
+1635252905 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\tuplatamiplata\tuplatamiplata.h
+
+1635269060 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\tuplatamiplata\tuplatamiplata.c
+	<stdio.h>
+	<stdlib.h>
+	"TuPlataMiPlata.h"
+
+1634868811 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\piladinamica\piladinamica.c
+	<stddef.h>
+	<string.h>
+	<stdlib.h>
+	"PilaDinamica.h"
+
+1633894009 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\piladinamica\piladinamica.h
+
+1635136189 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\pilaestatica\pilaestatica.c
+	<string.h>
+	"PilaEstatica.h"
+
+1634386695 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\pilaestatica\pilaestatica.h
+

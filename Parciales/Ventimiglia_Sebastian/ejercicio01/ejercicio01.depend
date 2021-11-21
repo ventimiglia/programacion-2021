@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1635301322 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\ventimiglia_sebastian\ejercicio01\biblioteca\ejercicio01.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ejercicio01.h"
+
+1635298897 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\ventimiglia_sebastian\ejercicio01\biblioteca\ejercicio01.h
+	"../cola/ColaDinamica.h"
+
+1635300578 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\ventimiglia_sebastian\ejercicio01\main.c
+	<stdio.h>
+	<stdlib.h>
+	"./biblioteca/ejercicio01.h"
+	"./biblioteca/utilitarias.h"
+
+1635300332 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\ventimiglia_sebastian\ejercicio01\biblioteca\utilitarias.c
+	<stdio.h>
+	<stdlib.h>
+	"utilitarias.h"
+	"ejercicio01.h"
+
+1635299445 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\ventimiglia_sebastian\ejercicio01\biblioteca\utilitarias.h
+
+1634857461 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\ventimiglia_sebastian\ejercicio01\cola\coladinamica.c
+	<stdlib.h>
+	<string.h>
+	"ColaDinamica.h"
+
+1634784258 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\ventimiglia_sebastian\ejercicio01\cola\coladinamica.h
+

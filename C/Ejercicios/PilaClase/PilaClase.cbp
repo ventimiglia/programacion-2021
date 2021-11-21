@@ -31,10 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="PilaDinamica.c">
+		<Unit filename="../../Bibliotecas/PilaDinamica/PilaDinamica.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="PilaDinamica.h" />
+		<Unit filename="../../Bibliotecas/PilaDinamica/PilaDinamica.h" />
+		<Unit filename="../../Bibliotecas/PilaEstatica/PilaEstatica.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Bibliotecas/PilaEstatica/PilaEstatica.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

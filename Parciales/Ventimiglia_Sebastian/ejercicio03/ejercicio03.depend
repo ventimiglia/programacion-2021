@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1635303046 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\ventimiglia_sebastian\ejercicio03\biblioteca\ejercicio03.cpp
+	"ejercicio03.h"
+	<iostream>
+
+1635303022 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\ventimiglia_sebastian\ejercicio03\biblioteca\ejercicio03.h
+	<iostream>
+
+1635302217 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\parciales\ventimiglia_sebastian\ejercicio03\main.cpp
+	<iostream>
+	"./biblioteca/ejercicio03.h"
+

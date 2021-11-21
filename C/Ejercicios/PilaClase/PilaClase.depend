@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1633833903 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\piladinamica\piladinamica.c
+	<stddef.h>
+	<string.h>
+	<stdlib.h>
+	"PilaDinamica.h"
+
+1633832931 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\piladinamica\piladinamica.h
+
+1633826095 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\pilaclase\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../../Bibliotecas/PilaDinamica/PilaDinamica.h"
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1544203428 source:e:\entregable_2018-12-04\ejercicio 3\funciones.c
+	"funciones.h"
+
+1544202530 e:\entregable_2018-12-04\ejercicio 3\funciones.h
+
+1544203342 source:e:\entregable_2018-12-04\ejercicio 3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+

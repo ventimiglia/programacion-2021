@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1543340324 source:c:\users\laboratorios\desktop\parcial\2doparcialc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<utilitarias.h>
+	<varias.h>
+	<arbol.h>
+
+1543344622 c:\users\laboratorios\desktop\parcial\include\utilitarias.h
+	<stdio.h>
+	<arbol.h>
+
+1543344118 c:\users\laboratorios\desktop\parcial\include\arbol.h
+	<Tipos.h>
+
+1499402083 c:\users\laboratorios\desktop\parcial\include\tipos.h
+
+1479414095 c:\users\laboratorios\desktop\parcial\include\varias.h
+
+1543344895 source:c:\users\laboratorios\desktop\parcial\2doparcialc\utilitarias.c
+	<utilitarias.h>
+	<string.h>
+	<varias.h>
+
+1543343457 source:c:\users\laboratorios\desktop\parcial\2doparcialc\arbol.c
+	<tipos.h>
+	<stdio.h>
+	<stdlib.h>
+	<arbol.h>
+
+1543352614 source:c:\users\laboratorios\desktop\sanchez grigioni,tomas\2doparcialc\arbol.c
+	<tipos.h>
+	<stdio.h>
+	<stdlib.h>
+	<arbol.h>
+
+1499402083 c:\users\laboratorios\desktop\sanchez grigioni,tomas\include\tipos.h
+
+1543350649 c:\users\laboratorios\desktop\sanchez grigioni,tomas\include\arbol.h
+	<Tipos.h>
+
+1543351601 source:c:\users\laboratorios\desktop\sanchez grigioni,tomas\2doparcialc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<utilitarias.h>
+	<varias.h>
+	<arbol.h>
+
+1543349976 c:\users\laboratorios\desktop\sanchez grigioni,tomas\include\utilitarias.h
+	<stdio.h>
+	<arbol.h>
+
+1479414095 c:\users\laboratorios\desktop\sanchez grigioni,tomas\include\varias.h
+
+1543352757 source:c:\users\laboratorios\desktop\sanchez grigioni,tomas\2doparcialc\utilitarias.c
+	<utilitarias.h>
+	<string.h>
+	<varias.h>
+

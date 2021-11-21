@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1541893088 source:c:\users\dell\desktop\2do parciales\entregable_2018-07-10\2doparcialcpp\horadeldia.cpp
+	"horadeldia.h"
+	<iostream>
+
+1541892748 c:\users\dell\desktop\2do parciales\entregable_2018-07-10\2doparcialcpp\horadeldia.h
+	<iostream>
+
+1541893173 source:c:\users\dell\desktop\2do parciales\entregable_2018-07-10\2doparcialcpp\main.cpp
+	"horadeldia.h"
+	<iostream>
+	<windows.h>
+
