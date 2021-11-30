@@ -1,10 +1,34 @@
 #include "ListaDoble.h"
 
-void crearListaD(tListaD* pl)
+void crearLista(tListaD* p)
 {
-    *pl = NULL;
+    *p = NULL;
 }
-int ponerOrdListaD(tListaD* pl, const void * pd, unsigned tam,
+
+int vaciarLista(tListaD* p)
+{
+    int cant = 0;
+    tNodoD * act = *p;
+
+    if(act)
+    {
+        while(act->ant)
+            act = act->ant;
+        while(act)
+        {
+            tNodoD * aux = act->sig;
+
+            free(act->info);
+            free(act);
+            act = aux;
+            cant++;
+        }
+        *p = NULL;
+    }
+    return cant;
+}
+
+int ponerOrdLi staD(tListaD* pl, const void * pd, unsigned tam,
                    int (*cmp)(const void*, const void*))
 {
     tNodoD* auxSig = *pl,

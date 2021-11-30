@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1638149970 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\persona\persona.cpp
+	<iostream>
+	<string.h>
+	"Persona.h"
+
+1638139421 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\persona\persona.h
+
+1638147498 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\ejercicios\persona\main.cpp
+	<iostream>
+	"..\..\Bibliotecas\Persona\Persona.h"
+	"..\..\Bibliotecas\Persona\Empleado.h"
+
+1638150017 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\persona\empleado.cpp
+	<iostream>
+	"Persona.h"
+	"Empleado.h"
+
+1638148903 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\persona\empleado.h
+	"Persona.h"
+

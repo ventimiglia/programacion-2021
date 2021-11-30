@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1638019669 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\figura\figura.cpp
+
+1638110192 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\ejercicios\figura\main.cpp
+	<iostream>
+	"..\..\Bibliotecas\Figura\Triangulo.h"
+	"..\..\Bibliotecas\Figura\Punto.h"
+	"..\..\Bibliotecas\Figura\FiguraException.h"
+
+1638021463 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\src\figura.cpp
+
+1638023096 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\figura\cuadrado.cpp
+	"Cuadrado.h"
+
+1638021101 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\figura\cuadrado.h
+	"Figura.h"
+
+1638021085 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\figura\figura.h
+
+1638055615 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\figura\punto.cpp
+	<math.h>
+	"Punto.h"
+
+1638059296 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\figura\punto.h
+
+1638110074 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\figura\triangulo.cpp
+	<math.h>
+	"Triangulo.h"
+	"FiguraException.h"
+
+1638063428 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\figura\triangulo.h
+	"Figura.h"
+	"Punto.h"
+
+1638110032 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\figura\figuraexception.cpp
+	"string.h"
+	"FiguraException.h"
+
+1638109995 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\cplusplus\bibliotecas\figura\figuraexception.h
+	"exception"
+	<string>
+

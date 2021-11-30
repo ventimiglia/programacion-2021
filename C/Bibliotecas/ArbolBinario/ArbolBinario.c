@@ -31,11 +31,6 @@ void crearArbolBinBusq(tArbolBinBusq *p)
               ( ( Z ) = malloc( W ) ) == NULL   ?                          \
                     free( X ), 0 : 1  )
 
-void * reservarMemoriaNodo2(X,Y,Z,W)
-{
-    X = (tNodoArbol)*malloc(y) == NULL || z = malloc(w) == NULL ?
-}
-
 int insertarArbolBinBusq(tArbolBinBusq *p, const void *d, unsigned tam,
                          int (*cmp)(const void *, const void *))
 {

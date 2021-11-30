@@ -1,5 +1,5 @@
 /** ***********************************************************************
- **     main.h      prueba de primitivas del  TDA ÁRBOL  binario de búsqueda
+ **     main.h      prueba de primitivas del  TDA ï¿½RBOL  binario de bï¿½squeda
  ** *********************************************************************** **/
 #ifndef ARBOL_H_
 #define ARBOL_H_
@@ -19,7 +19,7 @@ int crearArchivo(char*path, void * vec, unsigned tam, unsigned ce);
 
 
 /** ***********************************************************************
- **     main.c      prueba de primitivas del  TDA ÁRBOL  binario de búsqueda
+ **     main.c      prueba de primitivas del  TDA ï¿½RBOL  binario de bï¿½squeda
  ** *********************************************************************** **/
 #include "main.h"
 struct s_vecRes
@@ -50,14 +50,17 @@ void probarFuncionesVarias()
     unsigned tamDato = sizeof(int);
     int dato;
     FILE * pf;
+
     crearArchivo("ordenado.dat", vec, sizeof(int),sizeof(vec)/sizeof(int));
+
     crearArbolBinBusq(&ar);
-    cargarArchivoBinOrdenadoArbolBinBusq(&ar, "ordenado.dat", sizeof(int));
-//    cargarDesdeDatosOrdenadosArbolBinBusq(&ar,
-//                                          vec,
-//                                          sizeof(vec)/sizeof(int),
-//                                          leerDesdeVector,
-//                                          &tamDato);
+
+//    cargarArchivoBinOrdenadoArbolBinBusq(&ar, "ordenado.dat", sizeof(int));
+    cargarDesdeDatosOrdenadosArbolBinBusq(&ar,
+                                          vec,
+                                          sizeof(vec)/sizeof(int),
+                                          leerDesdeVector,
+                                          &tamDato);
     ///eliminarRaizArbolBinBusq(&ar);
     dato = alturaArbolBin(&ar);
 //    for(i=0; i< tamVecPre; i++)
@@ -69,27 +72,27 @@ void probarFuncionesVarias()
 //        insertarArbolBinBusq(&ar, vec+i, sizeof(int), cmp_ent);
 //    }
     ///cargar el arbol en un archivo de texto
-    pf = fopen("arbol.txt", "wt");
-    if(!pf)
-        return;
-    recorrerEnOrdenArbolBinBusq(&ar,pf,imprimir_arch);
-    fclose(pf);
+//    pf = fopen("arbol.txt", "wt");
+//    if(!pf)
+//        return;
+//    recorrerEnOrdenArbolBinBusq(&ar,pf,imprimir_arch);
+//    fclose(pf);
     ///cargar el arbol en un vector de enteros
-    recorrerEnOrdenArbolBinBusq(&ar,&res,guardarVecEnteros);
-    for(i=0; i<res.ce; i++)
-    {
-        printf("-%d-", res.vecRes[i]);
-    }
-    printf("\n\n");
+//    recorrerEnOrdenArbolBinBusq(&ar,&res,guardarVecEnteros);
+//    for(i=0; i<res.ce; i++)
+//    {
+//        printf("-%d-", res.vecRes[i]);
+//    }
+//    printf("\n\n");
     ///imprimir el arbol
-    recorrerEnOrdenArbolBinBusq(&ar,NULL,imprimir);
+    recorrerEnOrdenArbolBinBusq(&ar,NULL,imprimirConForma);
     printf("\n\n");
-    recorrerPreOrdenArbolBinBusq(&ar,NULL,imprimir);
-    printf("\n\n");
-    recorrerPosOrdenArbolBinBusq(&ar,NULL,imprimir);
-    printf("\n\n");
-    recorrerEnOrdenInversoArbolBinBusq(&ar,NULL,imprimirConForma);
-    printf("\n\n");
+//    recorrerPreOrdenArbolBinBusq(&ar,NULL,imprimirConForma);
+//    printf("\n\n");
+//    recorrerPosOrdenArbolBinBusq(&ar,NULL,imprimir);
+//    printf("\n\n");
+//    recorrerEnOrdenInversoArbolBinBusq(&ar,NULL,imprimirConForma);
+//    printf("\n\n");
     if (esCompletoArbolBin(&ar))
         printf("\nCompleto");
     if (esBalanceadoArbolBin(&ar))
@@ -97,16 +100,16 @@ void probarFuncionesVarias()
     if (esAVLArbolBin(&ar))
         printf("\nAVL");
     printf("\n\n");
-    if (esCompleto2ArbolBin(&ar))
-        printf("\n2 Completo");
-    if (esBalanceado2ArbolBin(&ar))
-        printf("\n2 Balanceado");
-    if (esAVL2ArbolBin(&ar))
-        printf("\n2 AVL");
-    mayorElemNoClaveArbolBinBusq(&ar, &dato, sizeof(dato),cmp_ent);
-    printf("\n\nMayor No Clave: %d", dato);
-    menorElemNoClaveArbolBinBusq(&ar, &dato, sizeof(dato),cmp_ent);
-    printf("\n\nMenor No Clave: %d", dato);
+//    if (esCompleto2ArbolBin(&ar))
+//        printf("\n2 Completo");
+//    if (esBalanceado2ArbolBin(&ar))
+//        printf("\n2 Balanceado");
+//    if (esAVL2ArbolBin(&ar))
+//        printf("\n2 AVL");
+//    mayorElemNoClaveArbolBinBusq(&ar, &dato, sizeof(dato),cmp_ent);
+//    printf("\n\nMayor No Clave: %d", dato);
+//    menorElemNoClaveArbolBinBusq(&ar, &dato, sizeof(dato),cmp_ent);
+//    printf("\n\nMenor No Clave: %d", dato);
 }
 void imprimirConForma(void * info, unsigned tam, unsigned n, void * params)
 {

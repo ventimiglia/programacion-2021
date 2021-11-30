@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1637447512 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\arbolbinario\arbolbinario.c
+1637719923 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\arbolbinario\arbolbinario.c
 	"ArbolBinario.h"
 
 1637446305 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\bibliotecas\arbolbinario\arbolbinario.h
@@ -7,4 +7,13 @@
 	<stdlib.h>
 	<stdio.h>
 	<math.h>
+
+1637798951 source:c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\arbolbinario\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../Bibliotecas/ArbolBinario/ArbolBinario.h"
+	"main.h"
+
+1637719614 c:\users\sventimiglia\documents\unlam\programacion\ejercicios\c\ejercicios\arbolbinario\main.h
 
